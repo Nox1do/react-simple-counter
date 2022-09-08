@@ -1,4 +1,5 @@
 {
+	"homepage": "https://nox1do.github.io/react-simple-counter/",
 	"name": "react-hello",
 	"version": "1.0.1",
 	"engines": {
@@ -8,6 +9,8 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "webpack-dev-server --mode development",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist",
 		"build": "webpack --mode development",
 		"deploy:github": "node deploy-to-github.js"
 	},

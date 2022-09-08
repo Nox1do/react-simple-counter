@@ -9,14 +9,14 @@ import rigoImage from "../../img/rigo-baby.jpg";
 function Home(props) {
 	return (
 <div className='App'>
-	<div className="bigCounter"> //contenedor principal
-		<div className="calendar"> //icono 
+	<div className="bigCounter"> 
+		<div className="calendar"> 
 		<FontAwesomeIcon icon={faClock}></FontAwesomeIcon></div> 
-		<div className="four">{props.digitFour %10}</div> //digito 4
-		<div className="three">{props.digitThree %10}</div> //digito 3
-		<div className="two">{props.digitTwo %10}</div>  //digito 2
-		<div className="one">{props.digitOne %10}</div> // digito 1
-	  </div>
+		<div className="four">{props.digitFour %10}</div> 
+		<div className="three">{props.digitThree %10}</div>
+		<div className="two">{props.digitTwo %10}</div>  
+		<div className="one">{props.digitOne %10}</div> 
+	 </div>
 </div>
 	);
   };
